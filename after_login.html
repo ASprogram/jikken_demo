@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="login-container">
+        <div id="main">
+            <h2>Sign Out</h2>
+            <button id="logout">SignOut</button>
+            <div id="sms_div">
+                <form method="post" action="send_message.php">
+                    <input type="text" name="recievers_no" placeholder="Enter Reciever's No">
+                    <br>
+                    <textarea name="message" placeholder="Enter Message Text"></textarea>
+                    <br>
+                    <input type="submit" name="send_message" value="SEND MESSAGE">
+                </form>
+            </div>
+            <span id="data">
+                <!-- <div>dummy</div> -->
+            </span>
+        </div>
+
+    </div>
+    <script type="module" src="login.js"></script>
+    <script type="module" src="sendData.js"></script>
+
+</body>
+
+</html>
